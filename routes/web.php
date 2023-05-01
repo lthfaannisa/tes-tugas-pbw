@@ -13,10 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/landing-page', function () {
-    return view('layouts.landing-page');
+
+
+/**
+ * Route::get('/', function () {
+ * return view('welcome');
+ * });
+ */
+
+ Route::get('/', function () {
+    return view('LoginPage');
 });
 
-Route::get('/template', function () {
-    return view('layouts.template');
+Route::get('/lowongan-pekerjaan', function () {
+    return view('LowonganPekerjaan');
+});
+
+Route::get('/bantuan-page', function () {
+    return view('BantuanPage');
+});
+
+Route::get('/dashboard-page', function () {
+    return view('DashboardPage');
+});
+
+Route::get('/data-alumni-page', function () {
+    return view('DataAlumniPage');
+});
+
+Route::get('/profil-page', function () {
+    return view('ProfilPage');
 });
